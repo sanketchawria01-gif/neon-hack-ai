@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050805">
+  <title>NEON HACK AI — Safe Cyber Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">LOCAL DEMO · SAFE CYBER LAB</p>
+        <h1><span>NEON</span> HACK AI</h1>
+      </div>
+      <span class="status"><i></i> SYSTEM ONLINE</span>
+    </header>
+
+    <section class="panel terminal-panel" aria-label="Animated terminal">
+      <div class="panel-title">
+        <h2>TERMINAL</h2>
+        <span>SIMULATION ONLY</span>
+      </div>
+      <div id="terminal" class="terminal" aria-live="polite"></div>
+      <button id="runScan" class="button button-outline" type="button">RUN SAFE SIMULATION</button>
+    </section>
+
+    <section class="panel chat-panel" aria-label="AI chat demo">
+      <div class="panel-title">
+        <h2>AI CHAT</h2>
+        <span>DEMO MODE</span>
+      </div>
+      <div id="messages" class="messages" aria-live="polite">
+        <p class="message assistant"><b>NEON AI</b><br>Demo mode is active. Ask about cybersecurity basics or the safe simulator.</p>
+      </div>
+      <form id="chatForm" class="chat-form">
+        <input id="chatInput" type="text" placeholder="Ask a safe cybersecurity question…" autocomplete="off" maxlength="500">
+        <button class="button" type="submit">SEND</button>
+      </form>
+      <div class="voice-row">
+        <button id="voiceInput" class="button button-outline" type="button">🎙 VOICE INPUT</button>
+        <button id="speakToggle" class="button button-outline" type="button" aria-pressed="true">🔊 SPEAK REPLIES: ON</button>
+      </div>
+      <p id="voiceStatus" class="hint">Voice input requires a supported browser and microphone permission.</p>
+    </section>
+
+    <footer>All terminal actions are simulated locally. No network scanning or external AI service is used.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
